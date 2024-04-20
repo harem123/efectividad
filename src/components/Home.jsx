@@ -68,8 +68,11 @@ const Home = () => {
                   Mejoremos la Efectividad
                 </span>
               </h1>
-              <p className="text-neutralGray text-base mb-8 text-center mt-4">
-                Consulte aqui las anomalias de lectura de cada zona
+              <h2 className="text-4xl text-neutralDGray font-semibold mb-4 md-4/5">
+                Usuarios con anomalias de lectura
+              </h2>
+              <p className="text-neutralGray text-base mb-8 mt-4">
+                Consulte aqui los usuarios con mas de 50 anomalias de lectura reportadas en los ultimos 6 meses de lectura de cada zona
               </p>
 
               <div class="max-w-sm mx-auto flex">
