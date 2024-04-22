@@ -46,16 +46,16 @@ const Normalizaciones = () => {
                   <div className='bg-white rounded-lg shadow-md p-4 flex justify-center items-center m-4'>
                       <Radar
                           data={{
-                              labels: ["CENTRO", "NORTE", "OCCIDENTE","PACIFICO","COCANA","SUR"],
+                              labels: ["CENTRO", "NORTE", "OCCIDENTE","PACIFICO","SUR"],
                               datasets: [{
                                 label: "Normalizaciones",
-                                data: [469, 302, 151, 337, 322,110],
+                                data: [ 938,1025,423,756,591],
                                 backgroundColor: "rgba(54, 162, 235, 0.5)", // Semi-transparent blue
       borderColor: "rgba(54, 162, 235, 1)", // Solid blue border
                                 
                             }, {
                                 label: "Inspeccion Tecnica",
-                                data: [350, 310, 370, 439, 60,345],
+                                data: [1844,1232,184,1018,649],
                                 backgroundColor: "rgba(255, 206, 86, 0.5)", // Semi-transparent yellow
       borderColor: "rgba(255, 206, 86, 1)", // Solid yellow border
                                 
@@ -63,7 +63,7 @@ const Normalizaciones = () => {
                             },
                             {
                                 label: "Recuperacion de Energia",
-                                data: [150, 110, 420, 235, 620,180],
+                                data: [257,444,63,312,51],
                                 backgroundColor: "rgba(75, 192, 192, 0.5)", // Semi-transparent green
                                 borderColor: "rgba(75, 192, 192, 1)", // Solid green border
                                 
