@@ -3,37 +3,6 @@ import {Chart as ChartJS} from "chart.js/auto"
 import {Bar,Doughnut, Radar} from "react-chartjs-2"
 import DataTable from "react-data-table-component"
 
-const columns = [
-    { name: "Zona",
-        selector: row => row.zona,
-        sortable:true},
-        
-    { name: "Ordenes",
-    selector: row => row.ordenes,
-    sortable:true},
-    { name: "Matriculas",
-    selector: row => row.matriculas,
-    sortable:true }
-]
-
-const dataT = [
-    { zona: "CENTRO",
-    ordenes: "469",
-    matriculas: "150" },
-    { zona: "NORTE",
-    ordenes: "151",
-    matriculas: "17" },
-    { zona: "PACIFICO",
-    ordenes: "1332",
-    matriculas: "62" },
-    { zona: "SUR",
-    ordenes: "302",
-    matriculas: "110" },
-    { zona: "OCCIDENTE",
-    ordenes: "337",
-    matriculas: "139" }
-]
-
 
 const Normalizaciones = () => {
   return (
@@ -46,35 +15,29 @@ const Normalizaciones = () => {
                   <div className='bg-white rounded-lg shadow-md p-4 flex justify-center items-center m-4'>
                       <Radar
                           data={{
-                              labels: ["CENTRO", "NORTE", "OCCIDENTE","PACIFICO","SUR"],
+                              labels: ["Recuperacion de Energia",  "Normalizacion","Visita Tecnica"],
                               datasets: [{
-                                label: "Normalizaciones",
-                                data: [ 938,1025,423,756,591],
+                                label: "Tumaco",
+                                data: [90, 128, 143],
                                 backgroundColor: "rgba(54, 162, 235, 0.5)", // Semi-transparent blue
       borderColor: "rgba(54, 162, 235, 1)", // Solid blue border
                                 
                             }, {
-                                label: "Inspeccion Tecnica",
-                                data: [1844,1232,184,1018,649],
+                                label: "Tumaco Ami",
+                                data: [174, 506, 372],
                                 backgroundColor: "rgba(255, 206, 86, 0.5)", // Semi-transparent yellow
       borderColor: "rgba(255, 206, 86, 1)", // Solid yellow border
                                 
                                 
                             },
-                            {
-                                label: "Recuperacion de Energia",
-                                data: [257,444,63,312,51],
-                                backgroundColor: "rgba(75, 192, 192, 0.5)", // Semi-transparent green
-                                borderColor: "rgba(75, 192, 192, 1)", // Solid green border
-                                
-                            },
+                            
                         ],
                           }}
                           options={{
                               plugins: {
                                   title: {
                                       display: true,
-                                      text: 'Clasificación por Zona',
+                                      text: 'Clasificación por Tecnologia',
                                       font: { size: 20 }
                                   }
                               }
