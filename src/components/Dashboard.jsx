@@ -55,7 +55,7 @@ const Dashboard = () => {
                               labels: ["Comercial", "Control Perdidas", "Caminantes"],
                               datasets: [{
                                   label: "Actividades",
-                                  data: [555, 1495, 1240],
+                                  data: [1444, 203, 1487],
                                   backgroundColor:[
                                       "#006837","#1a9850","#a6d96a"
                                   ]
