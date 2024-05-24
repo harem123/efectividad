@@ -7,6 +7,7 @@ import Header from './components/Header'
 import Historic from './components/Historic'
 import Dashboard from './components/Dashboard'
 import Normalizaciones from './components/Normalizaciones'
+import Recuperacion from './components/Recuperacion'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -16,7 +17,7 @@ function App() {
       <Header/>
       <Historic/>
       <Dashboard/>
-      <Normalizaciones/>
+      <Recuperacion/>
     </>
   )
 }

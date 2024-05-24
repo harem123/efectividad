@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Bar,Doughnut, Line} from "react-chartjs-2"
+import {Bar,Doughnut} from "react-chartjs-2"
 import DataTable from "react-data-table-component"
 
 const columns = [
@@ -55,7 +55,11 @@ const Dashboard = () => {
                               labels: ["Comercial", "Control Perdidas", "Caminantes"],
                               datasets: [{
                                   label: "Actividades",
-                                  data: [1444, 203, 1487],
+
+                                  data: [1681, 1641, 231],
+
+                                
+
                                   backgroundColor:[
                                       "#006837","#1a9850","#a6d96a"
                                   ]

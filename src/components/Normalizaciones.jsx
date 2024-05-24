@@ -9,7 +9,7 @@ const Normalizaciones = () => {
       <div className='bg-neutralSilver'>
           <div className="max-w-screen-2x1 mx-auto px-4 lg:px-14 mt-8">
           <h2 className="px-6 md:px-14 text-3xl md:text-4xl mb-4 md:mb-4 font-semibold text-neutralDGray leading-snug">
-    Tipos de Actividad Ejecutada en Campo
+    Recuperacion de Energia por Seccional
   </h2>
               <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8'>
                   <div className='bg-white rounded-lg shadow-md p-4 flex justify-center items-center m-4'>
