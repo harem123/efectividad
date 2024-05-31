@@ -40,14 +40,50 @@ const dataT = [
     
 ];
 
+const handleSendClick2 = () => {
+    console.log("clicked")
+
+    .catch((error) => console.log("Something fails with request", error));
+  };
+
 const Dashboard = () => {
   return (
       <div className='bg-neutralSilver'>
           <div className="max-w-screen-2x1 mx-auto px-4 lg:px-14">
-          <h2 className="px-6 md:px-14 text-3xl md:text-4xl mb-4 md:mb-4 font-semibold text-neutralDGray leading-snug">
+            <div>
+            <h2 className="px-6 md:px-14 text-3xl md:text-4xl mb-4 md:mb-4 font-semibold text-neutralDGray leading-snug">
     Actividades Realizadas en Campo
   </h2>
+  <p className="text-neutralGray text-base mb-8 ">
+                Actualizado 17/04/2024
+    </p>
+  <div class="max-w-sm mx-auto flex">
+                <form className="flex-grow">
+
+                  <select id="small" class="block w-full p-2 mb-6 text-sm text-neutralGray border border-gray-300 rounded-lg bg-gray-50 focus:ring-brandPrimary focus:border-brandPrimary dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:primaryBrand dark:focus:border-blue-500">
+                    <option selected>Elige una Seccional</option>
+                    <option value="COR">Cordillera</option>
+                    <option value="IPI">Ipiales</option>
+                    <option value="CRU ">La Cruz</option>
+                    <option value="UNI ">La Union</option>
+                    <option value="PAS">Pasto</option>
+                    <option value="PIE">Pie de Monte</option>
+                    <option value="SAN">Sandona</option>
+                    <option value="TUM">Tumaco</option>
+                    <option value="AMI">Tumaco AMI</option>
+                    <option value="TUQ">Tuquerres</option>
+
+                  </select>
+                </form>
+                <button onClick={handleSendClick2} className="inline-flex items-center justify-center h-10 px-4 ml-2 text-sm font-medium text-white bg-brandPrimary rounded-lg hover:bg-neutralDGray focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brandPrimary">
+                  Consultar
+                </button>
+              </div>
+
+            </div>
+          
               <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8'>
+              
                   <div className='bg-white rounded-lg shadow-md p-4 flex justify-center items-center m-6'>
                   {/* Add margin classes */}
                       <Doughnut 
@@ -57,11 +93,9 @@ const Dashboard = () => {
                                   label: "Actividades",
 
                                   data: [1681, 1641, 231],
-
-                                
-
+                              
                                   backgroundColor:[
-                                      "#006837","#1a9850","#a6d96a"
+                                      "#1a4718","#83a561","#eae69e"
                                   ]
                               }],
                           }}
@@ -89,7 +123,7 @@ const Dashboard = () => {
                                     173
                                 ],
                                   backgroundColor:[
-                                      "#006837"
+                                    "#eae69e"
                                   ]
                               }, {
                                   label: "Normalizacion",
@@ -97,7 +131,7 @@ const Dashboard = () => {
                                     667,
                                     326],
                                   backgroundColor:[
-                                      "#1a9850"
+                                    "#83a561"
                                   ]
                               },
                               {
@@ -106,7 +140,7 @@ const Dashboard = () => {
                                     584,
                                     368],
                                 backgroundColor:[
-                                    "#a6d96a"
+                                    "#1a4718"
                                 ]
                             },
                           ],
