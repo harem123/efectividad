@@ -75,8 +75,8 @@ const Home = () => {
                 Consulte aqui los usuarios con mas de 50 anomalias de lectura reportadas en los ultimos 6 meses de lectura de cada zona
               </p>
 
-              <div class="max-w-sm mx-auto flex">
-                <form class="flex-grow">
+              <div className="max-w-sm mx-auto flex">
+                <form className="flex-grow">
 
                   <select id="small" class="block w-full p-2 mb-6 text-sm text-neutralGray border border-gray-300 rounded-lg bg-gray-50 focus:ring-brandPrimary focus:border-brandPrimary dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:primaryBrand dark:focus:border-blue-500">
                     <option selected>Elige una zona</option>
